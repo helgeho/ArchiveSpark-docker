@@ -1,0 +1,18 @@
+{
+    "display_name": "ArchiveSpark",    
+    "language_info": { "name": "scala" },
+    "argv": [
+        "/config/toree/bin/run.sh",
+        "--profile",
+        "{connection_file}"
+    ],
+    "codemirror_mode": "scala",
+    "env": {
+        "SPARK_OPTS": "--master=local[*] --conf spark.default.parallelism=100 --conf spark.serializer=org.apache.spark.serializer.KryoSerializer",
+        "CAPTURE_STANDARD_OUT": "true",
+        "CAPTURE_STANDARD_ERR": "true",
+        "SEND_EMPTY_OUTPUT": "false",
+        "SPARK_HOME": "/config/spark",
+        "LIB_PATH": "/config/lib"
+    }
+}
