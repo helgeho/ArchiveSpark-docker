@@ -26,10 +26,10 @@ fi
 
 if [ ! -d /config/lib ]; then
     mkdir /config/lib
-    curl -L -O https://github.com/helgeho/ArchiveSpark/releases/download/v2.7.5/archivespark-assembly-2.7.5.jar
-    curl -L -O https://github.com/helgeho/ArchiveSpark/releases/download/v2.7.5/archivespark-assembly-2.7.5-deps.jar
-    mv archivespark-assembly-2.7.5.jar /config/lib
-    mv archivespark-assembly-2.7.5-deps.jar /config/lib
+    curl -L -O https://github.com/helgeho/ArchiveSpark/releases/download/v2.7.6/archivespark-assembly-2.7.6.jar
+    curl -L -O https://github.com/helgeho/ArchiveSpark/releases/download/v2.7.6/archivespark-assembly-2.7.6-deps.jar
+    mv archivespark-assembly-2.7.6.jar /config/lib
+    mv archivespark-assembly-2.7.6-deps.jar /config/lib
 fi
 
 mkdir -p /root/.jupyter

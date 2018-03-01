@@ -8,7 +8,7 @@
     ],
     "codemirror_mode": "scala",
     "env": {
-        "SPARK_OPTS": "--master=local[*] --conf spark.default.parallelism=100 --conf spark.serializer=org.apache.spark.serializer.KryoSerializer",
+        "SPARK_OPTS": "--master=local[*] --conf spark.default.parallelism=100 --conf spark.serializer=org.apache.spark.serializer.KryoSerializer --conf spark.executor.userClassPathFirst=true",
         "CAPTURE_STANDARD_OUT": "true",
         "CAPTURE_STANDARD_ERR": "true",
         "SEND_EMPTY_OUTPUT": "false",
