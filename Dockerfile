@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3
+FROM continuumio/anaconda3:5.0.1
 MAINTAINER holzmann@L3S.de
 
 # Install Jupyter
