@@ -11,10 +11,10 @@ if [ ! -f /config/jupyter_notebook_config.py ]; then
 fi
 
 if [ ! -d /config/spark ]; then
-    curl -L -O http://archive.apache.org/dist/spark/spark-2.2.0/spark-2.2.0-bin-hadoop2.6.tgz
-    tar -xf spark-2.2.0-bin-hadoop2.6.tgz 
-    mv spark-2.2.0-bin-hadoop2.6 /config/spark
-    rm spark-2.2.0-bin-hadoop2.6.tgz
+    curl -L -O http://archive.apache.org/dist/spark/spark-2.2.2/spark-2.2.2-bin-hadoop2.7.tgz
+    tar -xf spark-2.2.2-bin-hadoop2.7.tgz 
+    mv spark-2.2.2-bin-hadoop2.7 /config/spark
+    rm spark-2.2.2-bin-hadoop2.7.tgz
 fi
 
 if [ ! -d /config/toree ]; then
