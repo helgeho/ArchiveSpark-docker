@@ -1,5 +1,5 @@
-FROM continuumio/anaconda3:5.0.1
-MAINTAINER holzmann@L3S.de
+FROM continuumio/anaconda3:5.3.0
+MAINTAINER helge@archive.org
 
 # Install Jupyter
 
@@ -7,8 +7,7 @@ RUN conda install jupyter -y --quiet
 
 # Install Java
 
-RUN echo "deb http://http.debian.net/debian jessie-backports main" >> /etc/apt/sources.list
-RUN apt-get update && apt-get install -y -t jessie-backports openjdk-8-jre
+RUN apt-get update && apt-get install -y openjdk-8-jre
 
 # Copy files
 
