@@ -1,13 +1,11 @@
-FROM continuumio/anaconda3:5.3.0
+FROM continuumio/anaconda:2019.07
 MAINTAINER helge@archive.org
 
-# Install Jupyter
+ENV PATH="${PATH}:/opt/conda/bin"
 
-RUN conda install jupyter -y --quiet
+# Install Jupyter and Java
 
-# Install Java
-
-RUN apt-get update && apt-get install -y openjdk-8-jre
+RUN /opt/conda/bin/conda install openjdk=8.0.152 jupyter -y --quiet
 
 # Copy files
 
