@@ -29,10 +29,10 @@ fi
 
 if [ ! -d /config/lib ]; then
     mkdir /config/lib
-    curl -L -O --progress-bar https://github.com/helgeho/ArchiveSpark/releases/download/v.3.0/archivespark-assembly-3.0.jar
-    curl -L -O --progress-bar https://github.com/helgeho/ArchiveSpark/releases/download/v.3.0/archivespark-assembly-3.0-deps.jar
-    mv archivespark-assembly-3.0.jar /config/lib
-    mv archivespark-assembly-3.0-deps.jar /config/lib
+    curl -L -O --progress-bar https://github.com/helgeho/ArchiveSpark/releases/download/v.3.0.1/archivespark-assembly-3.0.1.jar
+    curl -L -O --progress-bar https://github.com/helgeho/ArchiveSpark/releases/download/v.3.0.1/archivespark-assembly-3.0.1-deps.jar
+    mv archivespark-assembly-3.0.1.jar /config/lib
+    mv archivespark-assembly-3.0.1-deps.jar /config/lib
 fi
 
 mkdir -p /root/.jupyter
